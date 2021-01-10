@@ -17,12 +17,12 @@ Renesas's sites, and import the relative source code and lib to Qt Creator.
 #### Reference of the directory Folder Readme.md for more information how to install.
 
 ### Node.js
-[readme](../nodejs/README.md)
+[readme](./nodejs/README.md)
 The backend of web-app
 ### React
-[readme](../react/README.md)
+[readme](./react/README.md)
 The frontend of web-app
 
 ### Qt
-[readme](../qt/README.md)
+[readme](./qt/README.md)
 The QT dashboard     

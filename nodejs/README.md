@@ -2,7 +2,7 @@
 ### Demo of ZMOD AirQuality Kit Nodejs 
 
 
-This as a part of Zmod Air Quality Raspberry as a dash board for elements14 Roadtest.
+This is  part of Zmod Air Quality Raspberry as a dash board for elements14 Roadtest.
 
 https://www.element14.com/community/roadTestReviews/3517/l/idt-zmod4410-indoor-air-quality-raspberry-pi-hat-review
 
@@ -57,7 +57,7 @@ pm2 start airquality.js
 follow the guide from nginx 
 https://www.nginx.com/resources/wiki/start/topics/tutorials/install/#official-debian-ubuntu-packages
 
-modifity /etc/nginx/sites-available/default 
+modify /etc/nginx/sites-available/default 
 ### Insert proxy server:
 ```
 location /sensor {
