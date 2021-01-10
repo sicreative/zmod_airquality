@@ -1,0 +1,20 @@
+.columnleftitem {
+  float: left;
+ /* width: 225px;*/
+  padding: 2px;
+  display: table-cell;
+
+}
+.columnrightchat {
+  float: left;
+ /* width: 100%;*/
+  display:table-cell;
+  padding: 10px;
+
+
+}
+
+
+
+
+
