@@ -5,7 +5,7 @@ This as a part of Zmod Air Quality Raspberry as a dash board for elements14 Road
 
 https://www.element14.com/community/roadTests/2223/l/IDT-ZMOD4410-Indoor-Air-Quality-Raspberry-Pi-HAT
 
-All code on this repository is GNU Lesser General Public License.
+All code on this repository is [GNU Lesser General Public License 3.0](./LICENCE).
 
 
 You need to agree with Renesas software licences, approvided and download the firmware and relative code at
