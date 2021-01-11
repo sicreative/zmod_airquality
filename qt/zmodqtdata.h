@@ -1,10 +1,10 @@
 #ifndef ZMODQTDATA_H
 #define ZMODQTDATA_H
 
-#define EXTERNAL_SENSOR
+//#define EXTERNAL_SENSOR
 #define WRITE_CSV
 #define USE_INTERRUPT
-#define DEBUG_OUTPUT
+//#define DEBUG_OUTPUT
 
 
 #ifdef EXTERNAL_SENSOR

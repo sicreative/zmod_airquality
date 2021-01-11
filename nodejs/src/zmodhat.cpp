@@ -22,7 +22,7 @@ static zmod4xxx_dev_t zmodhat_dev;
 static uint8_t zmodhat_sensor_result[32] = {0} ;
 static uint8_t zmodhat_prod_data[ZMOD4410_PROD_DATA_LEN];
 
-static int i2cHandle = 0;
+static int i2cHandle = -1;
 
 static uint8_t zmodhat_status;
 static uint8_t eoc_flag = 0;
@@ -110,7 +110,7 @@ int i2c_closeport(void){
     if(i2cHandle>=0)
         close(i2cHandle);
 
-    i2cHandle = 0;
+    i2cHandle = -1;
 
     return 0;
 }
@@ -220,8 +220,6 @@ int8_t zmodhat_hs300x_start_measurement(){
 
     i2c_rdwr_ioctl_data set[1];
     struct i2c_msg msgs[1];
-    uint8_t data[1];
-   // data[0]=0x44<<1;
     msgs[0].addr = HS300X_ADD;
     msgs[0].flags = 0;
     msgs[0].len = 0;
@@ -229,9 +227,7 @@ int8_t zmodhat_hs300x_start_measurement(){
 
 
     set[0].msgs = msgs;
-    set[0].nmsgs =1;
 
-    //int rtl = ioctl(i2cHandle,I2C_RDWR,&set);
 
     if (ioctl(i2cHandle,I2C_RDWR,&set) < 0)
         return ERROR_I2C;
