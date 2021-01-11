@@ -23,8 +23,8 @@ https://github.com/nodejs/node-gyp
 
 ### Compile the native add-on 
 
-Copy those file from Renesas package to root directory
-![alt directory](pic/zmod_2.png)
+Copy those file from Renesas package to ./src directory
+
 
 
 ***Renesas_ZMOD4410_IAQ_2nd_Gen_Example/ZMOD4410_Firmware/zmod4xxx_example/src/zmod4xxx_types.h***
@@ -35,9 +35,10 @@ Copy those file from Renesas package to root directory
 
 ***Renesas_ZMOD4410_IAQ_2nd_Gen_Example/ZMOD4410_Firmware/zmod4xxx_example/src/zmod4xxx.c***
 
-***ZMOD4410_Firmware/gas-algorithm-libraries/iaq_2nd_gen/Raspberry Pi/ARMv8-A/arm-linux-gnueabihf-gcc/lib_iaq_2nd_gen.a***
-
 ***ZMOD4410_Firmware/gas-algorithm-libraries/iaq_2nd_gen/Raspberry Pi/ARMv8-A/arm-linux-gnueabihf-gcc/lib_iaq_2nd_gen.h***
+
+Copy following .a static lib on root ./ directory 
+***ZMOD4410_Firmware/gas-algorithm-libraries/iaq_2nd_gen/Raspberry Pi/ARMv8-A/arm-linux-gnueabihf-gcc/lib_iaq_2nd_gen.a***
 
 build native addon
 ```
